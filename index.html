@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Natural Image Gallery</h1>
+<p>feel think peacefully onimage </p>
+
+<div class="gallery">
+    <img src="image/ChatGPT Image Jun 9, 2026, 10_03_07 PM.png" onclick="openLightbox(0)">
+    <img src="image/ChatGPT Image Jun 9, 2026, 10_12_45 PM.png" onclick="openLightbox(1)">
+    <img src="image/ChatGPT Image Jun 9, 2026, 10_15_12 PM.png" onclick="openLightbox(2)">
+    <img src="image/ChatGPT Image Jun 9, 2026, 10_17_10 PM.png" onclick="openLightbox(3)">
+</div>
+
+<div id="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <button onclick="prevImage()">❮</button>
+    <img id="lightbox-img">
+    <button onclick="nextImage()">❯</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
